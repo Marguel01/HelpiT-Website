@@ -203,7 +203,8 @@ else:
                 df = df[df["Usuário"] == st.session_state.usuario]
 
             df["Data"] = pd.to_datetime(df["Data"], format='%d/%m/%Y %H:%M', errors='coerce')
-            resultados = df[df["Patrimonio"].astype(str).str.contains(patrimonio, na=False)]
+            resultados = df[df["Patrimônio"].astype(str).str.contains(patrimonio, na=False)]
+            
 
             if not resultados.empty:
                 st.success(f"{len(resultados)} problema(s) encontrado(s) para o patrimônio {patrimonio}:")
