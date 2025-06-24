@@ -203,7 +203,11 @@ else:
                 df = df[df["Usuário"] == st.session_state.usuario]
 
             df["Data"] = pd.to_datetime(df["Data"], format='%d/%m/%Y %H:%M', errors='coerce')
-            resultados = df[df["Patrimônio"].astype(str).str.contains(patrimonio, na=False)]
+            if "Patrimônio" in df.columns:
+                resultados = df[df["Patrimônio"].astype(str).str.contains(patrimonio, na=False)]
+            else:
+                st.error("⚠️ A coluna 'Patrimônio' não foi encontrada no DataFrame.")
+                st.write("Colunas disponíveis:", list(df.columns))
             
 
             if not resultados.empty:
