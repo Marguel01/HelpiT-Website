@@ -84,12 +84,12 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-st.image("https://i.ibb.co/6RBSr4Hq/help-t-logo.png")
+
 # Controle de sessão
 if "logado" not in st.session_state:
     st.session_state.logado = False
     st.session_state.usuario = ""
-
+st.image("https://i.ibb.co/6RBSr4Hq/help-t-logo.png")
 # --- Login ---
 if not st.session_state.logado:
     st.title("🔐 Login")
