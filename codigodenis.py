@@ -107,7 +107,7 @@ if not st.session_state.logado:
 
 # --- Sistema Principal ---
 else:
-    st.image("https://i.ibb.co/0jN5v2hg/help-t-logo-1.png")
+    st.image("https://i.ibb.co/gZ5LT1CL/help-t-logo-1-1.png")
     #st.title("🛠️ HELP!T")
     st.sidebar.write(f"👤 Usuário: {st.session_state.usuario}")
     menu = st.sidebar.selectbox("Menu", ["Registrar Problema", "Listar/Filtrar Problemas", "Buscar por Patrimônio", "Sair"])
