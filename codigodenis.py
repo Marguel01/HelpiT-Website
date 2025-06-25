@@ -74,7 +74,7 @@ def enviar_pdf_email(destinatario, chamado, caminho_pdf):
         smtp.send_message(msg)
 
 # --- Inicialização ---
-st.set_page_config(page_title="Sistema de Chamados TI",page_icon="https://i.ibb.co/s9fpKvjQ/logo-helpit.png", layout="centered")
+st.set_page_config(page_title="HELP!T",page_icon="https://i.ibb.co/s9fpKvjQ/logo-helpit.png", layout="centered")
 
 inicializar_csv()
 st.markdown("""
@@ -107,7 +107,8 @@ if not st.session_state.logado:
 
 # --- Sistema Principal ---
 else:
-    st.title("🛠️ Sistema de Problemas de TI")
+    st.image("https://i.ibb.co/0jN5v2hg/help-t-logo-1.png")
+    #st.title("🛠️ HELP!T")
     st.sidebar.write(f"👤 Usuário: {st.session_state.usuario}")
     menu = st.sidebar.selectbox("Menu", ["Registrar Problema", "Listar/Filtrar Problemas", "Buscar por Patrimônio", "Sair"])
 
