@@ -92,7 +92,7 @@ if "logado" not in st.session_state:
 
 # --- Login ---
 if not st.session_state.logado:
-    st.image("https://i.ibb.co/6RBSr4Hq/help-t-logo.png")
+    st.image("https://i.ibb.co/0jN5v2hg/help-t-logo-1.png")
     st.title("🔐 Login")
     usuario = st.text_input("Usuário")
     senha = st.text_input("Senha", type="password")
