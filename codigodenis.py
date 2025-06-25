@@ -89,9 +89,10 @@ st.markdown("""
 if "logado" not in st.session_state:
     st.session_state.logado = False
     st.session_state.usuario = ""
-st.image("https://i.ibb.co/6RBSr4Hq/help-t-logo.png")
+
 # --- Login ---
 if not st.session_state.logado:
+    st.image("https://i.ibb.co/6RBSr4Hq/help-t-logo.png")
     st.title("🔐 Login")
     usuario = st.text_input("Usuário")
     senha = st.text_input("Senha", type="password")
