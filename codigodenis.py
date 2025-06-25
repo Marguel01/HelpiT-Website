@@ -74,7 +74,7 @@ def enviar_pdf_email(destinatario, chamado, caminho_pdf):
         smtp.send_message(msg)
 
 # --- Inicialização ---
-st.set_page_config(page_title="Sistema de Chamados TI",page_icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ52eM4QwGQMky7rfAUqBgw6sbZwlChZ43bwg&s", layout="centered")
+st.set_page_config(page_title="Sistema de Chamados TI",page_icon="https://i.ibb.co/s9fpKvjQ/logo-helpit.png", layout="centered")
 inicializar_csv()
 st.markdown("""
     <style>
